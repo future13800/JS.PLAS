@@ -134,7 +134,7 @@ export default async (options, config) => {
     //保活
     function keepalive() {
         // 1.请求/hello，保持唤醒
-        const render_app_url ="https://ndjis.onrender.com" 
+        const render_app_url =
             "https://" + process.env.RENDER_EXTERNAL_HOSTNAME + "/hello";
         axios
             .get(render_app_url)
